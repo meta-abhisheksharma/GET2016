@@ -77,6 +77,15 @@ public class SurveyMain {
 		
 		}while(status.equalsIgnoreCase("y"));
 		
+		Map<String, Integer> map=sPaper.surveyPercentage(lst);
+		
+	    for (Entry<String, Integer> entry  : map.entrySet()){ 
+	    	int per=(entry.getValue()/count)*100;
+	        System.out.println(entry.getKey() + " - " + entry.getValue());
+	        out.write(""+entry.getKey()+" :"+per+"%");
+			out.flush();
+			out.newLine();
+	    }
 		/*Map<String, Integer> map=sPaper.surveyPercentage(lst);
 		for(int index=0;index<sinOption;index++){
 			int per=(map.get(index+1)/count)*100;
