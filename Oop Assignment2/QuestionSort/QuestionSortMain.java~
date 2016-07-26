@@ -18,7 +18,8 @@ public class QuestionSortMain {
 		BufferedWriter out = null;
 		String line;
 		List<String> lst=new ArrayList<String>();		
-		try {
+		try 
+		{
 			in = new BufferedReader(new FileReader(".//src//SurveyOnSurvey//source.txt"));			
 
 		} catch (FileNotFoundException e) {

@@ -69,7 +69,7 @@ class MatrixOperation{
 		for(int rIndex=0;rIndex<rMatrix.length;rIndex++){
 			//System.out.println("rIndex"+rIndex);
 			for(int cIndex=0;cIndex<(rMatrix[0].length);cIndex++){
-				//System.out.println("cIndex:"+cIndex);
+				S///ystem.out.println("cIndex:"+cIndex);
 				int sum=0;
 				for(int index=0;index<rMatrix.length;index++){
 					//System.out.println("index:"+index);
