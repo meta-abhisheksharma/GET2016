@@ -7,6 +7,33 @@ public class MenuMain {
 	public static void main(String[] args) {
 
 		//Initializing menus and submenus
+		
+		MenuAction menuActionLst= new MenuAction();
+		boolean repeat=false;
+		do{
+		repeat=false;
+		System.out.println("Enter Menu Name");
+		Scanner scan=new Scanner(System.in);
+		String menuName=scan.next();
+		Menu menu=new Menu(menuName);
+		System.out.println("Enter number of sublist");
+		int size=scan.nextInt();
+		System.out.println("Enter sublist");
+		for(int index=0;index<size;index++){
+			System.out.print("Enter sublist "+(index+1));
+			String subMenu=scan.next();
+			menu.setSubMenu(new SubMenu(subMenu));
+		}
+		
+		menuActionLst.addMenu(menu);
+		System.out.println("Do YOU want to Enter new Menu---Y and--N");
+		String choice=scan.next();
+		if(choice.equalsIgnoreCase("y")){
+			repeat=true;
+		}
+		}while(repeat);
+		
+		/**
 		Menu menuTV= new Menu("TV"); 
 		menuTV.setSubMenu(new SubMenu("LED"));
 		menuTV.setSubMenu(new SubMenu("LCD"));
@@ -26,6 +53,9 @@ public class MenuMain {
 		
 		menuAction.displyMenu();
 		menuAction.displaySubMenu(menuAction.getChoice(menuAction.getList().size()));
+		*/
+		menuActionLst.displyMenu();
+		menuActionLst.displaySubMenu(menuActionLst.getChoice(menuActionLst.getList().size()));
 		
 	}
 
