@@ -1,35 +1,36 @@
 package SinglyLinkedList;
 
 
-class Node{
+class Node<T>{
     
-	int data;
-    Node link;
+	T data;
+    Node<T> next;
  
 
     public Node(){
-        link = null;
-        data = 0;
+        next = null;
+        data = null;
     }    
 
-    public Node(int d,Node n){
-        data = d;
-        link = n;
+    public Node(T data,Node<T> next){
+        this.data = data;
+        this.next = next;
     }    
 
-    public void setLink(Node n){
-        link = n;
+    public void setLink(Node<T> next){
+        this.next = next;
     }    
     
-    public void setData(int d){
-        data = d;
+    public void setData(T data){
+        this.data = data;
     }    
     
-    public Node getLink(){
-        return link;
+    public Node<T> getLink(){
+        return this.next;
     }    
     
-    public int getData(){
-        return data;
+    public T getData(){
+        return this.data;
     }
 }
+
