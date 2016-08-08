@@ -1,19 +1,22 @@
 package ThirdlargestNumber;
 class LargestNumber{
 	public int getThirdLargestNumber(int array[]){
-		int first, second, third;
-		first= second= third= array[0];
-		for(int index= 1; index < array.length; index++){
-			if(first < array[index]){
-				second= first;
-				first= array[index];
-			}
-			if(second < array[index] && array[index] < first){
-				third= second;
-				second= array[index];
-			}
-			if(third < array[index] && array[index] < second){
-				third= array[index];
+		int second = Integer.MIN_VALUE;
+        int third = Integer.MIN_VALUE;
+        int first = Integer.MIN_VALUE;
+		
+
+		// first= second= third= array[0];
+		for (int index = 0; index < array.length; index++) {
+			if (first < array[index]) { 
+			    third = second;
+			    second = first;
+			    first = array[index];
+			} else if (second < array[index] && first > array[index]) {
+			    third = second;
+			    second = array[index];
+			} else if (third < array[index] && second > array[index]){
+			    third = array[index];
 			}
 		}
 		return third;
