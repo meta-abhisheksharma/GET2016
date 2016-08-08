@@ -11,13 +11,25 @@ public class Employee implements Comparable<Employee> {
 		this.name = name;
 		this.address = address;
 	}
+	
+	public void setEmpID(int emp_ID){
+		this.emp_ID = emp_ID;
+	}
 
 	public int getEmpID() {
 		return this.emp_ID;
 	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
 
 	public String getName() {
 		return this.name;
+	}
+
+	public void setAddress(String address){
+		this.address = address;
 	}
 
 	public String getAddress() {
@@ -31,7 +43,7 @@ public class Employee implements Comparable<Employee> {
 	 */
 	@Override
 	public int compareTo(Employee o) {
-		return this.getEmpID() - o.getEmpID();
+		return ((Integer)this.getEmpID()).compareTo((Integer)o.getEmpID());
 	}
 
 	public String toString(){
