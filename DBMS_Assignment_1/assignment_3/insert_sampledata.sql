@@ -45,7 +45,7 @@ INSERT INTO `title_authors` (`authors_id`,`title_id`) VALUES (4,2);
 
 
 
--- insert data into title_authors table
+-- insert data into books table
 -- -------------------------------------
 insert into books (title_id, purchase_dt, price, status) values (1, '2015-07-09 18:58:48', 825, 'M');
 insert into books (title_id, purchase_dt, price, status) values (2, '2016-03-01 22:53:43', 985, 'XS');
