@@ -5,10 +5,10 @@ select members.member_nm , b.issue_dt  ,b.due_dt,b.accession_no
 from members , book_issue b
 where members.member_id = b.member_id;
 
-select * from vw_members;
+--  select * from vw_members;
 
 -- Q2
-select * from members;
+-- --select * from members;
 
 drop view if exists vw_memberCat;
 create view vw_memberCat
@@ -16,11 +16,11 @@ as
 select member_id , member_nm , REPLACE(REPLACE(REPLACE(category,"M","Members"),"S","Student"),"F","Faculty")  as Category
 from members;
 
-select * from vw_memberCat;
+-- --select * from vw_memberCat;
 
 -- Q3
-select * from book_issue;
-select * from book_return;
+-- --select * from book_issue;
+-- --select * from book_return;
 
 create view vw_detail
 as
@@ -38,4 +38,4 @@ on ti.subject_id = s.subject_id;
 ;
 
 drop view if exists vw_detail;
-select * from vw_detail;
+-- --select * from vw_detail;
