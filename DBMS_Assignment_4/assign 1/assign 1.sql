@@ -14,11 +14,6 @@ where (bi.member_id, bi.issue_dt)
 not in (select member_id, issue_dt
 from book_return) ;
 
-select  * from members;
-select * from book_return;
-select * from book_issue;
-select * from books;
-select * from title;
 
 -- --Q-3
 select ti.title_nm ,mi.member_nm , bi.issue_dt , bi.due_dt ,br.return_date from book_issue bi 
@@ -37,12 +32,12 @@ from book_return where return_date > bi.due_dt) ;
 -- Q4--
 select * from books;
 
-select * 
+select accession_no ,title_id,purchase_dt,price,status 
 from books 
 where price = (select max(price) from books );
 
 -- Q5--
-select * 
+select accession_no ,title_id,purchase_dt,price,status 
 from books 
 where price = (select max(price) 
 from books
