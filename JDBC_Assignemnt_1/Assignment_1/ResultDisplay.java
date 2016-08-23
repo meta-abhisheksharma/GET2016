@@ -9,12 +9,13 @@ public class ResultDisplay {
 		dbo.authorBookDetail(author);
 		
 		//iterate booklist and respective titlelist
+		int counter = 0;
 		for (Book objBook : dbo.getBookList()) {
 			for (Title objTitle : dbo.getTitleList()) {
 				if (objBook.getTitle_id() == objTitle.getTitle_id()) {
-					System.out.println("" + objBook.getAccession_no() + " "
+					System.out.println(++counter +" :" + objBook.getAccession_no() + " "
 							+ objTitle.getTitle_nm() + " "
-							+ objBook.getPurchase_dt());
+								;
 				}
 			}
 		}
