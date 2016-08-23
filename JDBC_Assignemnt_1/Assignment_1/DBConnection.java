@@ -23,7 +23,7 @@ public class DBConnection {
 		String db = "lis";		
 		String mysqlURL = host.trim() + db.trim();
 		String user ="root";
-		String pass = "rdx435";
+		String pass = "12345";
 		
 		try {
 			con = DriverManager.getConnection(mysqlURL.trim(),user,pass);
