@@ -48,7 +48,7 @@ public class DBOperation {
 			}
 		}
 		return bookListAll;
-	}// close getAuthor()
+	}
 
 	//logic to find books which were not issued in last 1 year
 	public void checkAssignedTime() {
@@ -122,5 +122,5 @@ public class DBOperation {
 			}
 		}
 
-	}// close getAuthor()
+	}
 }
