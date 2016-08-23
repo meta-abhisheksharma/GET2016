@@ -45,7 +45,7 @@ public class DBOperation {
 			}
 		}
 		return bookListAll;
-	}// close getAuthor()
+	}
 
 	//retrive member list
 	public List<Member> getMembers() {
@@ -139,10 +139,10 @@ public class DBOperation {
 			rst = pst.executeQuery();
 
 			if (rst.next()) {
-				if (rst.getDate(2) != null) { //if book is not returned
+				if (rst.getDate(2) != null) { //if book is  returned
 					flag = false;
 					return flag;
-				} else {   				// book is returned
+				} else {   				// book is not returned
 					flag = true;
 					return flag;
 				}
