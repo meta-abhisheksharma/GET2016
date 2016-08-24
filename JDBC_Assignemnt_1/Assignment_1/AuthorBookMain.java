@@ -22,12 +22,15 @@ public class AuthorBookMain {
 			int choice = 0;
 			do {
 				choice = scan.nextInt();
-			} while (choice < 1 || choice > 25);
+			} while (choice < 1 || choice > authorList.size());
 
 			ResultDisplay resDis = new ResultDisplay();
 			resDis.displayResult(authorList.get(choice - 1));
+			
+			System.out.println("For Continue : 'Y' OR 'y'");
+			ch = scan.next().charAt(0);
 
-		} while (ch == 'Y' && ch == 'y');
+		} while (ch == 'Y' || ch == 'y');
 		
 		scan.close();
 	}
