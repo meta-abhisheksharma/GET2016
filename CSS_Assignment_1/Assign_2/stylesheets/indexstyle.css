@@ -39,7 +39,7 @@ padding: 0px;
 }
 
 #section {
-	padding: 20px;
+	padding: 25px 20px !important;
 	clear : both;
 	overflow : hidden;
 	
@@ -47,10 +47,8 @@ padding: 0px;
 
 #leftmenu {
 	
-width: 18%;
-padding: 10px;
+width: 20%;
 float: left;
-padding-top: 0px;
 }
 
 .vertical-menu-div{
@@ -89,10 +87,8 @@ margin: 7px 0px;
 }
 #middle {
 
-width: 59%;
+width: 60%;
 float: left;
-padding: 10px;
-margin: 0px 5px;
 }
 
 .sectionImage{
@@ -102,11 +98,9 @@ margin: 0px 5px;
 }
 #rightmenu {
 	
-width: 18%;
-padding: 10px;
+width: 20%;
 border-radius: 10px;
 float: left;
-padding-top: 0px;
 }
 
 .left-search{
@@ -149,20 +143,20 @@ padding-top: 0px;
 @media only screen and (max-width: 350px) {
 	.navlist{
 	overflow : hidden;
-margin: 0px;
-padding: 0px;	
+	margin: 0px;
+	padding: 0px;	
 }
 
 .navlist  li{
-	    clear : both;
+	     
     display: inline-block;
     padding: 10px;
     font-size: 19px;
+	width: 100%;
 }
 
 .navlist  li:hover{
 	    background-color : grey;
 }
 
-}
 }
