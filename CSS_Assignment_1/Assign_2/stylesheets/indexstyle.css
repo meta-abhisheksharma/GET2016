@@ -1,7 +1,8 @@
 #header {
 	text-align: center;
-	background-color: lightblue;
+	background-color: rgb(30, 50, 49);
 	padding: 25px 0px;
+	color : white;
 }
  
 .title {
@@ -14,7 +15,7 @@ font-size: 44px;
 	font-size: 21px;
 }
 #nav {
-	background-color: lightgoldenrodyellow;
+	background-color:  rgb(98, 187, 192);
 	overflow : hidden;
 }
 
@@ -26,6 +27,7 @@ padding: 0px;
 
 .navlist a {
 	text-decoration : none;
+	color: #1c1e1e;
 }
 .navlist  li{
 	    float: left;
@@ -52,18 +54,19 @@ float: left;
 }
 
 .vertical-menu-div{
-	background-color: lightpink;
+	background-color: #8fd7d4;
 	border-radius: 10px;
 	margin-bottom : 6px;
 	padding: 7px;
 }
 
 .vertical-menu{
-	background-color: antiquewhite;
+	background-color: #1e3231;
 display: block;
 font-size: 18px;
 padding: 6px;
 border-radius: 8px;
+color: white;
 	
 }
 
@@ -72,6 +75,7 @@ border-radius: 8px;
 padding: 0px ;
 font-size: 16px;
 margin: 7px 0px;
+
 }
 
 .vertical-menu-list  a {
@@ -80,6 +84,7 @@ margin: 7px 0px;
 }
 .vertical-menu-list li{
 	padding: 4px 12px;
+	color: #1c1e1e;
 }
 
 .vertical-menu-list li:hover{
@@ -110,7 +115,8 @@ margin-bottom: 4px;
 }
 #footer {
 	height: 56px;
-background-color: antiquewhite;
+background-color: #2d6a7d;
+color: aliceblue;
 }
 
 @media only screen and (max-width: 780px) {
