@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     font-family: Open Sans;
@@ -33,33 +34,35 @@ body{
 #contact-form form {
     width: 100%;
 }
-#contact-form form  span
-{padding: 0px 10px 0px 10px;
+
+
+#contact-form form  span{
+	padding: 0px 10px 0px 10px;
     border-radius: 3px 0px 0px 3px;
     border: thin #cccccc;
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
-    background: #eeeeee;}
+    background: #eeeeee;
+}
 
 #contact-form form  input,textarea,select{
     max-width:300px ;
     width: 40%;
     padding: 2px 5px 2px 5px;
-
     border-radius: 0px 3px 3px 0px;
     border: thin #cccccc;
     border-top-style: solid;
     border-right-style: solid;
     border-bottom-style: solid;
-
-    width: 40%}
+    width: 40%
+}
 
 #contact-form form  .rb{
-    max-width:40px  !important;
+    max-width:40px  ;
 }
-#contact-form form button{
 
+#contact-form form button{
     background-color: #e68f30;
     border: none;
     border-radius: 3px;
@@ -69,11 +72,8 @@ body{
 }
 
 #contact-form form button span{
-
     background-color: #e68f30;
     border: none;
-
-
     color: #fdf5d9;
     font-weight: bold;
 }
