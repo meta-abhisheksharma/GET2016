@@ -17,19 +17,19 @@
         <div class="line">
             <div class="lab"><label>First Name</label></div>
             <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                <input type="text" minlength="2" maxlength="15" placeholder="First Name" pattern="[a-zA-Z]" required></div>
+                <input type="text"  placeholder="First Name" pattern="[a-zA-Z]{3,15}" required></div>
 
 
             <div class="line">
                 <div class="lab"><label>Last Name</label></div>
                <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                    <input type="text" minlength="2" maxlength="15" placeholder="Last Name" pattern="[a-zA-Z]" required></div>
+                    <input type="text"  placeholder="Last Name" pattern="[a-zA-Z]{3,15}" required></div>
 
 
             <div class="line">
                 <div class="lab"><label>E-mail</label></div>
                 <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                <input type="email" minlength="10" maxlength="50" placeholder="E-mail" required></div>
+                <input type="email"  placeholder="E-mail" pattern=".{10,15}" required></div>
 
 
             <div class="line">
@@ -39,13 +39,13 @@
             <div class="line">
                 <div class="lab"><label>Address</label></div>
                 <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                <input type="text" minlength="10" maxlength="200" placeholder="Address" required></div>
+                <input type="text" placeholder="Address"  pattern=".{10,200}" required></div>
 
 
             <div class="line">
                 <div class="lab"><label>City</label></div>
                 <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                <input type="text" minlength="2" maxlength="20" placeholder="City" pattern="[a-zA-Z]" required></div>
+                <input type="text" minlength="2" maxlength="20" placeholder="City" pattern="[a-zA-Z]{2,20}" required></div>
 
             <div class="line">
                 <div class="lab"><label>State</label></div>
@@ -68,7 +68,7 @@
             <div class="line">
                 <div class="lab"><label>Zip Code</label></div>
                 <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                <input type="number" minlength="6" maxlength="6" placeholder="Zip Code" required></div>
+                <input type="text"  placeholder="Zip Code" pattern="[0-9]{6}" required></div>
 
             <div class="line">
                 <div class="lab"><label>WebSite or domain</label></div>
@@ -87,7 +87,7 @@
                 <div class="lab"><label>Project Description</label></div>
                 <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
 				
-                <textarea type="text-area" minlength="10" maxlength="200" placeholder="Project Description" required></textarea></div>
+                <textarea type="text-area"  placeholder="Project Description" pattern=".{10,200}" required></textarea></div>
             <center><button type="submit">Send <span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span></button>
                 </center>
         </form>
