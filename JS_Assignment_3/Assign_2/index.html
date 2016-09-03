@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <link type="text/css" href="myStyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <title>Assignment 1</title>
+	<script>
+		function oper(){
+		var result ="";
+		 for (var i = 0; i < document.getElementsByName('hosting').length; i++)
+		{
+    	if (document.getElementsByName('hosting')[i].checked)
+    	{
+    		result+=document.getElementsByName('hosting')[i].value;
+    	}
+		}
+		
+		for (var i = 0; i < document.getElementsByName('service').length; i++)
+		{
+    	if (document.getElementsByName('service')[i].checked)
+    	{
+    		result+=document.getElementsByName('service')[i].value;
+    	}
+		}
+		
+		document.getElementById("result").innerHTML=result;
+		}
+	</script>
+</head>
+
+<body>
+<header>
+<section id="header">
+    <h4>Combitnation!!</h4>
+</section>
+    <section id="contact-form">
+        <form method="post" action="index.html" >
+        
+            <div class="line">
+                <div class="lab"><label>Do you have hosting ?</label></div>
+                <input class="rb" id="rb1" type="radio" name="hosting" value="Yes" checked>Yes<br>
+                <input class="rb" id="rb2" type="radio" name="hosting" value="No">No
+            </div>
+			
+			<div class="line">
+                <div class="lab"><label>Web Services ?</label></div>
+                <input class="rb" type="radio" name="service" value="Google"checked>Google<br>
+                <input class="rb" type="radio" name="service" value="Yahoo">Yahoo
+            </div>
+
+
+            <center><button type="button" onclick="oper()">Send <span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span></button>
+                </center>
+        </form>
+    </section>
+
+</header>
+	<div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <link type="text/css" href="myStyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <title>Assignment 1</title>
+		<script>
+		function oper(){
+		for (var i = 0; i < document.getElementsByName('hosting').length; i++)
+		{
+    	if (document.getElementsByName('hosting')[i].checked)
+    	{
+    		alert(document.getElementById(document.getElementsByName('hosting')[i].value).value);
+    	}
+		}
+		
+		}
+		</script>
+</head>
+
+<body>
+<header>
+<section id="header">
+    <h4>Show List!!</h4>
+</section>
+    <section id="contact-form">
+        <form method="post" action="index.html" >
+        
+
+            <div class="line">
+                <div class="lab"><label>Browser</label></div>
+                <span><i class="fa fa-list" aria-hidden="true"></i></span>
+                <select id="browser">
+                    <option disabled>Select Option</option>
+                    <option value="Google Chrome">Google Chrome</option>
+                    <option value="Mozila">Mozila</option>
+                    <option value="Safari">Safari</option>
+                    <option value="IE">IE</option>
+                </select>
+                </div>
+				
+				<div class="line">
+                <div class="lab"><label>Programming Language</label></div>
+                <span><i class="fa fa-list" aria-hidden="true"></i></span>
+                <select id="lang">
+                    <option disabled>Select Option</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value=".net">.net</option>
+                </select>
+                </div>
+
+            <div class="line">
+                <div class="lab"><label>which u want to show ?</label></div>
+                <input class="rb" type="radio" name="hosting" value="browser" checked>Browser<br>
+                <input class="rb" type="radio" name="hosting" value="lang">Programming Language
+            </div>
+			
+            <center><button type="button" onclick="oper()">Show <span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span></button>
+                </center>
+        </form>
+    </section>
+
+</header>
+
+</body>
+</html>
