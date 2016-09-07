@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>welcome</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	
+	<body onload="hidebtnstart(show)">
+		<div class="txt"><span id="para">If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network). </span></div>
+		<div class="btn"><button id="hide" onclick="hidebtn(para,this,show)">HIDE</button><button id="show"  onclick="showbtn(para,this,hide)">SHOW</button></div>
+		<script>
+			function hidebtnstart(show){
+				show.style.display="none";
+			}
+			function hidebtn(para,hide,show){
+				show.style.display="inline";
+				para.style.display="none";
+				hide.style.display="none";
+			}
+			
+			function showbtn(para,show,hide){
+				hide.style.display="inline";
+				para.style.display="inline";
+				show.style.display="none";
+			}
+		</script>
+	</body>
+</html>
