@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="jquary.js"></script>
+    <title>Assignment 1</title>
+</head>
+
+<body>
+<header>
+<section id="header">
+    <h4>GET DETAIL !</h4>
+</section>
+    <section id="contact-form">
+        <form method="post" action="index.html" >
+		
+		 <div class="line">
+                <div class="lab"><label>Employee Name</label></div>
+                <span><i class="fa fa-list" aria-hidden="true"></i></span>
+                <select id="empNameList">
+                    <option selected>Select Option</option>
+                    <option value="first">Rakesh Sharma</option>
+                    <option value="second">Rohit Sharma</option>
+                    <option value="third">Shobhit Agrawal</option>
+                    <option value="forth">Kritik Garg</option>
+					<option value="fifth">Abhishek Sharma</option>
+                </select>
+                </div>
+				
+				
+        <div class="line">
+            <div class="lab"><label class="hello">Name</label></div>
+            <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                <input type="text"  placeholder="Employee Name" pattern="[a-zA-Z]{3,50}" disabled name="empName" id="empName" required></div>
+
+
+
+
+            <div class="line">
+                <div class="lab"><label class="hello">E-mail</label></div>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <input type="email"  placeholder="E-mail" pattern=".{10,35}" disabled name="empEmail" id="empEmail" required></div>
+
+
+            <div class="line">
+                <div class="lab"><label>Phone #</label></div>
+                <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <input type="text" placeholder="Phone" pattern="[0-9]{10}" disabled name="empPhone" id="empPhone" required></div>
+            <div class="line">
+                <div class="lab"><label class="hello">Address</label></div>
+                <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                <input type="text" placeholder="Address"  pattern=".{5,200}" disabled name="empAddress" id="empAddress" required></div>
+
+
+            <center><button type="submit">GET DETAIL <span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span></button>
+                </center>
+        </form>
+    </section>
+
+</header>
+
+</body>
+</html>
