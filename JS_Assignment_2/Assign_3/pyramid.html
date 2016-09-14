@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Demo </title>
+		 <link type="text/css" href="myStyle.css" rel="stylesheet">
+		 
+		 <script>
+			function calGreatest(){
+			var first = Number(document.getElementById('firstno').value);
+			var result="";
+			
+			for(var row = 0;row<first;row++){
+				for(var col = 0;col<first-row-1;col++){
+				result+="&nbsp";
+			} 
+			for(var col = 0;col<row;col++){
+				result+="*";
+			}
+			result+="<br/>";
+			} 
+			for(var index=0; index<first ; index++){
+			document.getElementById('result').innerHTML=result;
+			}
+			}
+		</script>
+	</head>
+	
+	<body>
+		
+		
+		<section id="header">
+    <h4>Print Table!!</h4>
+</section>
+    <section id="contact-form">
+        <form method="post" >
+        <div class="line">
+            <div class="lab"><label>Enter Pyramid Height</label></div>
+            <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                <input type="text" id="firstno" placeholder="First Number" pattern="[0-9]{1,}" required></div>
+
+            <center><button type="button" onclick="calGreatest()">Print Table<span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span></button>
+                </center>
+        </form>	
+			<div class="resultbox"><p id="result"></p></div>
+    </section>
+	</body>
+</html>
