@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Demo </title>
+		 <link type="text/css" href="myStyle.css" rel="stylesheet">
+		 
+		 <script>
+			function calGreatest(){
+			var flag = false;
+			var first = document.getElementById('firstno').value;
+			switch(first){
+			case "a" || "A":  flag=true; break;
+			case "e" || "E":  flag=true; break;
+			case "i" || "I":  flag=true; break;
+			case "o" || "O":  flag=true; break;
+			case "u" || "U":  flag=true; break;
+			}
+			if(flag){
+			document.getElementById("result").innerHTML = "' "+first+ " ' is Vowel" ;
+			}
+			else{
+			document.getElementById("result").innerHTML = "' "+first+ " ' is Conconant" ;
+			}
+			}
+		</script>
+	</head>
+	
+	<body>
+		
+		
+		<section id="header">
+    <h4>Vowel or Conconant</h4>
+</section>
+    <section id="contact-form">
+        <form method="post" >
+        <div class="line">
+            <div class="lab"><label>Enter A Character</label></div>
+            <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                <input type="text" id="firstno" placeholder="First Number" pattern="[a-zA-Z]{1}" required></div>
+
+            <center><button type="button" onclick="calGreatest()">Vowel/Conconant<span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span></button>
+                </center>
+        </form>	
+			<div class="resultbox"><p id="result"></p></div>
+    </section>
+	</body>
+</html>
