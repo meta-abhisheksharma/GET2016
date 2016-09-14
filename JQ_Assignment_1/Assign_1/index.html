@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>welcome</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	
+	<body>
+		<div class="txt"><span id="para">If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network). </span></div>
+		<div class="btn"><button id="hide">HIDE</button><button id="show" >SHOW</button></div>
+		<script>
+			$(document).ready(function(){
+			
+				
+					$("#show").hide();
+			
+				
+				$("#hide").click(function(){
+					$("#show").show();
+					$("span").hide();
+					$(this).hide();
+				});
+				
+				$("#show").click(function(){
+					$("#hide").show();
+					$("span").show();
+					$(this).hide();
+				});
+			});
+		</script>
+	</body>
+</html>
